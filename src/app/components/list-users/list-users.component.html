@@ -1,4 +1,29 @@
 <div class="listUsers">
-  
+  <span><i class="fa-thin fa-pencil"></i></span>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Usuario</th>
+        <th scope="col">Email</th>
+        <th scope="col">Nombres</th>
+        <th scope="col">Activo</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let l of listUsers">
+        <th>{{ l.username }}</th>
+        <th>{{ l.email }}</th>
+        <th>{{ l.name }}</th>
+        <th>{{ l.username }}</th>
+        <th class="acctions">
+
+          <span><img src="../../../assets/svg/folder.svg" ></span>
+          <span><img src="../../../assets/svg/pencil.svg" ></span>
+        </th>
+      </tr>
+    </tbody>
+  </table>
 
 </div>

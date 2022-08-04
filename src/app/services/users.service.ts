@@ -7,7 +7,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class UsersService {
 
-  baseUrl = 'https://randomuser.me/api/';
+  // baseUrl = 'https://randomuser.me/api/';
+  baseUrl = 'https://jsonplaceholder.typicode.com/users';
 
   constructor(
     private http: HttpClient,

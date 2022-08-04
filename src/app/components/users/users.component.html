@@ -1,21 +1,77 @@
 <div class="contenedor">
 <h3>Usuarios</h3>
 
-    <div class="form mt-3">
-      <div class="boxForm">
-        <input type="text" class="form-control" placeholder="Email" aria-label="Email" >
+    <div class="users">
+      <div class="form mt-3">
+        <div class="boxForm">
+          <input type="text" class="form-control" placeholder="Email" aria-label="Email" >
+        </div>
+        <div class="boxForm">
+          <input type="text" class="form-control" placeholder="Usuario" aria-label="Usuario" >
+        </div>
+        <div class="boxForm">
+          <input type="text" class="form-control" placeholder="Nombres" aria-label="Nombres" >
+        </div>
+        <div class="boxForm">
+          <input type="text" class="form-control" placeholder="Apellidos" aria-label="Apellidos" >
+        </div>
       </div>
-      <div class="boxForm">
-        <input type="text" class="form-control" placeholder="Usuario" aria-label="Usuario" >
+  
+      <div class="icons">
+      <span type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <img src="../../../assets/svg/add.svg" >
+      </span>
+      <span type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <img src="../../../assets/svg/search.svg" >
+      </span>
+    </div>
+
+
+<!-- Modal -->
+<div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="boxForm">
-        <input type="text" class="form-control" placeholder="Nombres" aria-label="Nombres" >
+      <div class="modal-body">
+        <div class="addUser">
+
+          <div class="boxForm">
+            <input type="text" class="form-control" placeholder="Nombres" aria-label="Nombres" >
+          </div>
+          <div class="boxForm">
+            <input type="text" class="form-control" placeholder="Apellidos" aria-label="Apellidos" >
+          </div>
+
+          <div class="boxForm">
+            <input type="text" class="form-control" placeholder="Email" aria-label="Email" >
+          </div>
+          <div class="boxForm">
+            <input type="text" class="form-control" placeholder="Usuario" aria-label="Usuario" >
+          </div>
+
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Estado</option>
+            <option value="activo">Activo</option>
+            <option value="inactivo">Inactivo</option>
+          </select>
+        
+        </div>
+
       </div>
-      <div class="boxForm">
-        <input type="text" class="form-control" placeholder="Apellidos" aria-label="Apellidos" >
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar</button>
       </div>
     </div>
   </div>
+</div>
+
+
+  </div>
+
+
 
   
 

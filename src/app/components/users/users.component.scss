@@ -3,16 +3,36 @@
 .contenedor{width:100%;height:auto;
   padding: 3rem 1rem;
 }
+
+.users{width:100%;height:auto;
+  border-radius: .4rem;
+  box-shadow:0 0 8px 3px rgba(0,0,0,.1);
+}
+.icons{width:100%;height:auto;
+  display:flex;
+  justify-content: end;
+  padding: 1rem;
+  span{width:40px;height: 40px;
+    background: #a4a4aa;
+    border-radius: 50%;
+    margin:0 1px;
+    display:flex;align-items:center;
+    justify-content:center;
+  }
+  img{width:20px;height:auto;
+  }
+}
 .form{width:100%;height:auto;
   padding: 2rem 1rem;
   margin: 0;
   display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1rem;
-  border-radius: .4rem;
-  box-shadow:0 0 8px 3px rgba(0,0,0,.1);
+  
   
 }
+
+
 
 @media only screen and (max-width:920px){
   .form{display: grid;
@@ -27,3 +47,32 @@
   
   }
 }
+
+.addUser{width:100%;height:auto;
+  display:grid;
+  grid-template-columns: repeat(5,1fr);
+  .boxForm{padding:0 .5rem;
+    margin: 1rem auto;
+  }
+  input{width:100%;height:auto;}
+}
+
+@media only screen and (max-width:1024px){
+  .addUser{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+  }
+}
+@media only screen and (max-width:920px){
+  .addUser{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media only screen and (max-width:600PX){
+  .addUser{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+
